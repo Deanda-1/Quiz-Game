@@ -25,15 +25,20 @@
     box-shadow: 0 0 10px 2;
   }
 
-  body-correct {
-    --hue: var(--hue-correct)
+  body.correct {
+    --hue: var(--hue-correct);
+    background-color: #AFA;
   } 
   
-  body-wrong {
-    --hue: var(--hue-wrong)  
+  body.wrong {
+    --hue: var(--hue-wrong)  ;
+    background-color: #FAA;
   } 
-
-  btn-grid {
+#question {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+  .btn-grid {
     display: grid;
      grid-template-columns: repeat(2,auto);
      gap: 10px;
@@ -47,16 +52,15 @@
   background-color: hsl(var(--hue) 100%, 50%);
   border-radius: 5px;
   padding: 5px 10px;
-  color: white;
   outline: none;
   cursor: pointer;
 }
 
-.btn-hover {
+.btn:hover {
   border-color: black;
 }
 
-start.btn, next.btn {
+#start-button.btn, #next-button.btn {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -71,4 +75,9 @@ start.btn, next.btn {
 
 .hide{
   display: none;
+}
+
+div.score {
+  padding-top: 80px;
+  font-size: 1rem;
 }
