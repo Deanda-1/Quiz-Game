@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
 </head>
-  <header>Test Quiz</header>
+
 <body>
+  <h1>Test Quiz</h1>
   <div class="container">
-    <div id="question-container"class="hide">.container {
-      width: 800px;
-      max-width: 80%;
-      backgorund-color: white;
-      border-radius: 5px;
-      padding: 10px;
-      box-shadow: 0 0 10px 2;
-    }
+    <div id="question-container" class="hide">
+      <div id="question"></div>
       <div id="answer-button" class="btn-grid">
         <button class="btn">Answer 1</button>
         <button class="btn">Answer 2</button>
@@ -25,14 +22,18 @@
       </div>
     </div>
     <div class="controls">
-      <button id="start-btn" class="start-btn btn">start</button>
-      <button id="next-btn" class="next-btn hide">next</button>
+      <button id="start-button" class="start-btn btn">start</button>
+      <button id="next-button" class="next-btn btn hide">next</button>
     </div>
-  </div>  
-    <div class="score">
-      <span id="right-answers"></span>     
-      
   </div>
-  <script src="script.js"></script>
+  <div class="score">
+    <span id="right-answers"></span>
+    <span id="timer"></span>
+  </div>
+  <ol id="scoreboard">
+  </ol>
+
+  <script src="quiz.js"></script>
 </body>
+
 </html>
